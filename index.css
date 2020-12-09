@@ -37,17 +37,17 @@ body, html, .main {
 
 .link {
   position: relative;
-  margin: 0 .8rem;
+  margin: 0 1rem;
 }
 
 .icon {
-  height: 1.5rem;
+  height: 2rem;
   filter: url(icon-filter.svg#icon-filter);
   transition: .5s;
 }
 
 .link:hover .icon {
-  height: 2.5rem;
+  height: 3rem;
   filter: none;
 }
 
