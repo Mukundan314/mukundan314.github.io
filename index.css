@@ -1,0 +1,82 @@
+body, html, .main {
+  font-family: "Source Code Pro";
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 40rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 20rem;
+  transition: .5s;
+}
+
+.profile-image:hover {
+  border-radius: 10%;
+  height: 22rem;
+}
+
+.name {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.links {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  position: relative;
+  margin: 0 .8rem;
+}
+
+.icon {
+  height: 1.5rem;
+  filter: url(icon-filter.svg#icon-filter);
+  transition: .5s;
+}
+
+.link:hover .icon {
+  height: 2.5rem;
+  filter: none;
+}
+
+.tooltip {
+  left: 50%;
+  transform: translateX(-50%);
+
+  position: absolute;
+
+  background: black;
+  color: white;
+
+  border-radius: .3rem;
+  padding: .5rem;
+  width: max-content;
+
+  font-size: .7rem;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .5s;
+}
+
+.link:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-heading {
+  font-weight: bold;
+  text-decoration: underline;
+}
