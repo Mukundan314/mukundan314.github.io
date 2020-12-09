@@ -1,5 +1,7 @@
-body, html, .main {
-  font-family: "Source Code Pro";
+body,
+html,
+.main {
+  font-family: "Source Code Pro", monospace;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -16,7 +18,7 @@ body, html, .main {
 .profile-image {
   border-radius: 50%;
   height: 20rem;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .profile-image:hover {
@@ -41,34 +43,29 @@ body, html, .main {
 }
 
 .icon {
-  height: 2rem;
+  height: 1.7rem;
   filter: url(icon-filter.svg#icon-filter);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .link:hover .icon {
-  height: 3rem;
+  height: 2.5rem;
   filter: none;
 }
 
 .tooltip {
   left: 50%;
   transform: translateX(-50%);
-
   position: absolute;
-
   background: black;
   color: white;
-
-  border-radius: .3rem;
-  padding: .5rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
   width: max-content;
-
-  font-size: .7rem;
-
+  font-size: 0.75rem;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity .5s;
+  transition: visibility 0s, opacity 0.5s;
 }
 
 .link:hover .tooltip {

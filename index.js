@@ -1,11 +1,11 @@
 const codeforcesHandle = "Mukundan314";
 const githubUsername = "Mukundan314";
 
-const codeforcesHandleDiv = document.getElementById('cf-handle');
-const codeforcesRatingDiv = document.getElementById('cf-rating');
+const codeforcesHandleDiv = document.getElementById("cf-handle");
+const codeforcesRatingDiv = document.getElementById("cf-rating");
 
-const githubUsernameDiv = document.getElementById('gh-username');
-const githubRepositoriesDiv= document.getElementById('gh-repositories');
+const githubUsernameDiv = document.getElementById("gh-username");
+const githubRepositoriesDiv = document.getElementById("gh-repositories");
 
 async function updateCodeforcesTooltip() {
   codeforcesHandleDiv.innerHTML = `Handle: ${codeforcesHandle}`;
